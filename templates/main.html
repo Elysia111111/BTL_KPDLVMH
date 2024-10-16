@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Disease Predictor</title>
+  <link rel="stylesheet" type="text/css" href="\static\style.css">
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Website Title -->
+
+  <div class="container">
+    <h2 class='container-heading'><span class="heading_font">Heart Disease Predictor</span></h2>
+    <div class='description'>
+      <p>(Note:This model is 82.67% accurate)</p>
+    </div>
+  </div>
+
+  <!-- Text Area -->
+  <div class="ml-container">
+    <form action="/predict" method="POST" style="margin-left: 200px;"> 
+
+      <table>
+        <tr>
+          <td><label for="age">Age</label></td>
+          <td>
+            <input type="text" id="age" name="age" placeholder="Your age..." style="width: 500px;"><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="gender">Gender</label></td>
+          <td>
+            <select id="gender" name="gender" style="width: 500px;">
+              <option selected>----select option----</option>
+              <option value="2">Male</option>
+              <option value="1">Female</option>
+            </select><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="height">Height</label></td>
+          <td>
+            <input type="text" id="height" name="height" placeholder="Your height..." style="width: 500px;"><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="weight">Weight</label></td>
+          <td>
+            <input type="text" id="weight" name="weight" placeholder="Your weight..." style="width: 500px;"><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="ap_hi">Systolic blood pressure</label></td>
+          <td>
+            <input type="text" id="ap_hi" name="ap_hi" placeholder="A number in range [70-180] mmHg" style="width: 500px;"><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="ap_lo">Diastolic blood pressure</label></td>
+          <td>
+            <input type="text" id="ap_lo" name="ap_lo" placeholder="A number in range [40-120] mmHg" style="width: 500px;"><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="cholesterol">Cholesterol</label></td>
+          <td>
+            <select id="cholesterol" name="cholesterol" style="width: 500px;">
+              <option selected>----select option----</option>
+              <option value="1">Normal</option>
+              <option value="2">Above normal</option>
+              <option value="3">well above normal</option>
+            </select><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="gluc">Glucose</label></td>
+          <td>
+            <select id="gluc" name="gluc" style="width: 500px;">
+              <option selected>----select option----</option>
+              <option value="1">Normal</option>
+              <option value="2">Above normal</option>
+              <option value="3">well above normal</option>
+            </select><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="smoke">Smoking</label></td>
+          <td>
+            <select id="smoke" name="smoke" style="width: 500px;">
+              <option selected>----select option----</option>
+              <option value="0">Smoking</option>
+              <option value="1">No Smoking</option>
+            </select><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="alco">Alcohol</label></td>
+          <td>
+            <select id="alco" name="alco" style="width: 500px;">
+              <option selected>----select option----</option>
+              <option value="0">Drinking</option>
+              <option value="1">No Drinking</option>
+            </select><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="alco">Physical activity</label></td>
+          <td>
+            <select id="active" name="active" style="width: 500px;">
+              <option selected>----select option----</option>
+              <option value="0">Exercise</option>
+              <option value="1">No Exercise</option>
+            </select><br>
+          </td>
+        </tr>
+      </table>
+
+      <input type="submit" class="my-cta-button" value="Predict">
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class='footer'>
+    <div class="contact">
+      <a target="_blank" href="https://github.com/asthasharma98/Heart-Disease-Prediction-Deployment"><i
+          class="fab fa-github fa-lg contact-icon"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/astha-sharma-47266b11b/"><i
+          class="fab fa-linkedin fa-lg contact-icon"></i></a>
+    </div>
+    <p class='footer-description'>Tham khảo Astha Sharma.</p>
+  </div>
+
+</body>
+
+</html>
