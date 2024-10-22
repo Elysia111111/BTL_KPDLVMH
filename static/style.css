@@ -16,11 +16,13 @@ body{
 
 /* Website Title */
 .container{
-    padding: 30px;
-	position:relative;
-	background: linear-gradient(45deg, #161616, #383436, #161616);
+    padding: 20px;
+	position: relative;
+	background: linear-gradient(45deg, #37ABCF, #0899c5, #37ABCF);
 	background-size: 500% 500%;
 	animation: change-gradient 10s ease-in-out infinite;
+	border-bottom-right-radius: 30px;
+  	border-bottom-left-radius: 30px;
 }
 @keyframes change-gradient {
 	0%{
@@ -124,9 +126,11 @@ label {
 	flex-shrink: 0;
 	position:relative;
 	padding: 20px;
-	background: linear-gradient(45deg, #161616, #383436, #161616);
+	background: linear-gradient(45deg, #37ABCF, #0899c5, #37ABCF);
 	background-size: 500% 500%;
 	animation: change-gradient 10s ease-in-out infinite;
+	border-top-right-radius: 30px;
+  	border-top-left-radius: 30px;
 }
 
 .footer-description{
