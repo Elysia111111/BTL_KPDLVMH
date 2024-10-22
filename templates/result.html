@@ -15,28 +15,37 @@
 
         <!-- Website Title -->
 		<div class="container">
+			<div class="logo">
+				<img
+				  src="/static/logo.png"
+				  alt="Logo"
+				  width="100px"
+				  height="100px"/>
+			  </div>
             <h2 class='container-heading'><span class="heading_font">Heart Disease Predictor</span></h2>
     	</div>
 
 		<!-- Result -->
 		<div class="results">
 			{% if prediction==1 %}
-				<h1>Prediction: <span class='danger'>Oops! You have Chances of Heart Disease.</span></h1>
+				<h1>Chuẩn đoán: <span class='danger'>Bạn có nguy cơ mắc bệnh tim.</span></h1>
 				
 			{% elif prediction==0 %}
-				<h1>Prediction: <span class='safe'>Great! You DON'T have Chances Heart Disease.</span></h1>
+				<h1>Chuẩn đoán: <span class='safe'>Bạn không có nguy cơ mắc bệnh tim.</span></h1>
 				
 			{% endif %}
 		</div>
 
 		<!-- Footer -->
-       <div class='footer'>
-           <div class="contact">
-               <a target="_blank" href="https://github.com/asthasharma98/Heart-Disease-Prediction-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
-               <a target="_blank" href="https://www.linkedin.com/in/astha-sharma-47266b11b/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
-           </div>
-           <p class='footer-description'>Tham khảo Astha Sharma.</p>
-       </div>
+		<div class='footer'>
+			<div class="contact">
+			  <a target="_blank" href="https://github.com/Elysia111111/BTL_KPDLVMH"><i
+				  class="fab fa-github fa-lg contact-icon"></i></a>
+			  <a target="_blank" href="https://web.whatsapp.com//"><i
+				  class="fab fa-whatsapp fa-lg contact-icon"></i></a>
+			</div>
+			<p class='footer-description'>Created by Nhóm 11</p>
+		  </div>
 
 	</body>
 </html>
